@@ -1,16 +1,14 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
  * main - Entry point
  * Description: checks on the last digit of the assigned var
- * Return: Always return 0 (Success)
-*/
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	int n;
-
-	int m;
+	int n, m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
