@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
  * main - Entry point
- * Description: prints all the numbers of base 16 in lowercase
+ * Description: Print base 16 numbers
  * Return: Always 0 (success)
  */
 int main(void)
@@ -10,7 +10,7 @@ int main(void)
 	char c;
 	char d = '0';
 
-	while (d <= '10')
+	while (d <= '9')
 	{
 		putchar(d);
 		d++;
