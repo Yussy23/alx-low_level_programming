@@ -3,24 +3,24 @@
 
 /**
  * print_list - prints a list_t linked list
- * @h: singly linked list to print
+ * @h: first node of linked list to print
  *
- * Return: number of nodes in the list
+ * Return: number of nodes printed
  */
 size_t print_list(const list_t *h)
 {
-	size_t i = 0;
+	size_t len = 0;
 
 	if (h == NULL)
 		return (0);
 	while (h != NULL)
 	{
 		if (h->str != NULL)
-			printf("[%d] %s\n", h->i, h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		else
 			printf("[0] (nil)\n");
-		i++;
+		len++;
 		h = h->next;
 	}
-	return (i);
+	return (len);
 }
