@@ -1,1 +1,1 @@
-0x00. C - Hello, World
+C - More singly linked lists
